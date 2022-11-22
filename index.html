@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Order of fear</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+	
+		<header>
+			<div class="container">
+				<h2 class="titulo">Matriz Shubu-dô</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Encontre sua ficha de inscrição</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite seu nome">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Academia</th>
+							<th>Mestre</th>
+							<th>Treina a quanto tempo?</th>
+							<th>Faixa</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-karateca">
+						<tr class="karateca" >
+							<td class="info-nome">Hayun</td>
+							<td class="info-academia">Shubu-dô</td>
+							<td class="info-mestre">Edson</td>
+							<td class="info-treina a quanto tempo?">4 anos</td>
+							<td class="info-faixa">Marrom</td>
+
+
+						<tr class="karateca" >
+							<td class="info-nome">Americo</td>
+							<td class="info-academia">Ryuzokan</td>
+							<td class="info-mestre">Fiaslik</td>
+							<td class="info-treina a quanto tempo?">2 anos</td>
+							<td class="info-faixa">Laranja</td>
+	
+	</tr>
+						<tr class="karateca" >
+							<td class="info-nome">Taehyusik</td>
+							<td class="info-academia">Okinawa</td>
+							<td class="info-mestre">Kags</td>
+							<td class="info-treina a quanto tempo?">8 anos)</td>
+							<td class="info-faixa">Preta</td>
+
+
+							<tr class="karateca" >
+								<td class="info-nome">Momo</td>
+								<td class="info-academia">Yokohoma</td>
+								<td class="info-mestre">Yoko</td>
+								<td class="info-treina a quanto tempo?">1 ano</td>
+								<td class="info-faixa">Amarela</td>
+	
+						</tr>
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar sua ficha</span>
+
+				<button id="buscar-karateca" class="botao bto-principal">Buscar karateca</button>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Adicionar novo karateca</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome presente em sua incrição" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="poder">Academia:</label>
+		            <input id="poder" name="poder" type="text" placeholder="indique o nome de sua academia" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="elemento">Mestre:</label>
+		            <input id="elemento" name="elemento" type="text" placeholder="digite o nome de seu mestre" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="arma">Faixa:</label>
+		            <input id="arma" type="text" placeholder="indique a faixa que você está" class="campo campo-medio">
+		        </div>
+
+		        <button id="adicionar-karateca" class="botao bto-principal">Adicionar</button>
+		    </form>
+		</section>
+
+		<script src="js/calcula-faixa.js" ></script>
+		<script src="js/form.js" ></script>
+		<script src="js/remover-karateca.js" ></script>
+		<script src="js/filtra.js" ></script>
+		<script src="js/buscar-karateca.js" ></script>
+
+	</body>
+</html>
